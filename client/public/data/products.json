@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Cheese Pizza",
+    "price": 199,
+    "category": "Food",
+    "image": "https://source.unsplash.com/400x300/?pizza"
+  },
+  {
+    "id": 2,
+    "name": "Veg Burger",
+    "price": 129,
+    "category": "Food",
+    "image": "https://source.unsplash.com/400x300/?burger"
+  },
+  {
+    "id": 3,
+    "name": "Coca-Cola (500ml)",
+    "price": 49,
+    "category": "Beverage",
+    "image": "https://source.unsplash.com/400x300/?coke"
+  }
+]

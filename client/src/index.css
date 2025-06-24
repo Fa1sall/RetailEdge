@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: var(--background);
+  --color-panel: var(--panel);
+  --color-text: var(--text);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-muted: var(--muted);
+}
+
+/* 🌙 Default = Dark mode */
+:root {
+  --background: #0f172a; /* slate-900 */
+  --panel: #0a0e1a; /* slate-950 */
+  --text: #f8fafc; /* slate-100 */
+  --border: #334155; /* slate-700 */
+  --accent: #3b82f6; /* blue-500 */
+  --muted: #64748b; /* slate-500 */
+}
+
+/* ☀️ Light mode overrides */
+.light {
+  --background: #f8fafc; /* slate-50 */
+  --panel: #ffffff;
+  --text: #0f172a; /* slate-900 */
+  --border: #cbd5e1; /* slate-300 */
+  --accent: #2563eb; /* blue-600 */
+  --muted: #94a3b8; /* slate-400 */
+}
