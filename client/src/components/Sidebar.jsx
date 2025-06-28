@@ -87,13 +87,6 @@ const Sidebar = ({ closeSidebar }) => {
           );
         })}
       </nav>
-
-      <a
-        href="https://github.com/Fa1sall"
-        className="flex gap-2 border-t border-border p-4 text-muted"
-      >
-        Build by Faisal <Rocket size={20} />
-      </a>
     </div>
   );
 };

@@ -16,7 +16,7 @@
   --text: #f8fafc; /* slate-100 */
   --border: #334155; /* slate-700 */
   --accent: #3b82f6; /* blue-500 */
-  --muted: #64748b; /* slate-500 */
+  --muted: #c2c8cf; /* slate-500 */
 }
 
 /* ☀️ Light mode overrides */
@@ -26,5 +26,5 @@
   --text: #0f172a; /* slate-900 */
   --border: #cbd5e1; /* slate-300 */
   --accent: #2563eb; /* blue-600 */
-  --muted: #94a3b8; /* slate-400 */
+  --muted: #454749; /* slate-400 */
 }

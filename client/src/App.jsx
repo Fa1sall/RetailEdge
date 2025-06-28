@@ -23,7 +23,7 @@ function App() {
       {/* Sidebar */}
       <div
         className={`fixed z-20 transition-transform duration-300 ease-in-out md:static
-          ${sidebarOpen ? "translate-x-0" : "-translate-x-full"} md:translate-x-0`}
+          ${sidebarOpen ? "translate-x-0" : "-translate-x-full"} md:translate-x-0 h-screen`}
       >
         <Sidebar closeSidebar={() => setSidebarOpen(false)} />
       </div>
@@ -41,7 +41,7 @@ function App() {
         </div>
 
         {/* Pages */}
-        <div className="flex-1 overflow-y-auto p-4">
+        <div className="flex-1 overflow-y-auto p-4 sm:w-auto">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/pos" element={<POS />} />
