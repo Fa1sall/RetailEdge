@@ -1,6 +1,5 @@
-// seedProducts.js
 import mongoose from "mongoose";
-import Product from "./models/Product.js"; // ✅ Direct named import (no .default)
+import Product from "./models/Product.js";
 
 const products = [
   {
@@ -102,15 +101,15 @@ const seed = async () => {
       useUnifiedTopology: true,
     });
 
-    console.log("✅ MongoDB Connected");
+    console.log("MongoDB Connected");
 
-    await Product.deleteMany(); // ✅ Works now
+    await Product.deleteMany();
     await Product.insertMany(products);
 
-    console.log("✅ Products seeded successfully!");
+    console.log("Products seeded successfully!");
     process.exit(0);
   } catch (err) {
-    console.error("❌ Error seeding products:", err);
+    console.error("Error seeding products:", err);
     process.exit(1);
   }
 };

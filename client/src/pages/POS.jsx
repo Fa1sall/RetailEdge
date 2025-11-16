@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { v4 as uuid } from "uuid";
 import {
   ShoppingCart,
   Trash2,
@@ -131,10 +132,18 @@ export default function POS() {
       return;
     }
 
+    const cleanedItems = cart.map((item) => ({
+      name: item.name,
+      price: item.price,
+      qty: item.qty,
+    }));
+
     axios
       .post("http://localhost:5000/api/orders", {
+        _id: uuid(),
         customer: customerDetails.name,
-        items: cart,
+        items: cleanedItems,
+        total,
       })
       .then(() => {
         alert("✅ Order placed successfully!");

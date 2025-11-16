@@ -1,4 +1,3 @@
-// routes/ai.js
 import express from "express";
 import { generateInsights } from "../controllers/aiController.js";
 

@@ -2,12 +2,18 @@ import Order from "../models/Order.js";
 
 export const createOrder = async (req, res) => {
   try {
-    const { customer, items } = req.body;
+    const { _id, customer, items } = req.body;
+
     const total = items.reduce((sum, item) => sum + item.price * item.qty, 0);
 
-    const newOrder = new Order({ customer, items, total });
-    const savedOrder = await newOrder.save();
+    const newOrder = new Order({
+      _id,
+      customer,
+      items,
+      total,
+    });
 
+    const savedOrder = await newOrder.save();
     res.status(201).json(savedOrder);
   } catch (error) {
     console.error("Error creating order:", error);
